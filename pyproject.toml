@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infsa"
+version = "0.1.0"
+description = "Infinite Self-Attention (InfSA) — Drop-in replacement for standard self-attention in any Transformer."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Giorgio Roffo"},
+]
+keywords = [
+    "attention", "self-attention", "transformer", "vision-transformer",
+    "infinite-self-attention", "spectral-attention", "deep-learning",
+    "pytorch", "computer-vision", "nlp", "llm",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=1.13.0",
+    "numpy>=1.21.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "torchvision>=0.14.0",
+    "transformers>=4.20.0",
+    "numpy>=1.21.0",
+    "timm>=0.6.7",
+]
+dev = [
+    "pytest>=7.0",
+    "torchvision>=0.14.0",
+    "transformers>=4.20.0",
+    "numpy>=1.21.0",
+    "timm>=0.6.7",
+]
+
+[project.urls]
+Homepage = "https://github.com/giorgioroffo/infinite-self-attention"
+Documentation = "https://github.com/giorgioroffo/infinite-self-attention"
+Repository = "https://github.com/giorgioroffo/infinite-self-attention"
+Issues = "https://github.com/giorgioroffo/infinite-self-attention/issues"
+
+[tool.setuptools.packages.find]
+include = ["infsa*"]
