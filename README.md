@@ -1,3 +1,12 @@
+# Infinite Self-Attention (InfSA) / Linear-InfSA
+
+Official implementation of the paper:
+**Self-Attention And Beyond the Infinite: Towards Linear Transformers with Infinite Self-Attention**
+
+Authors: Giorgio Roffo, Luke Palmer
+
+Paper: arXiv:2603.00175
+
 <p align="center">
   <img src="figures/gr_figure_method.png" width="85%"/>
 </p>
@@ -498,14 +507,44 @@ InfSA_release/
 ## Citation
 
 ```bibtex
-@article{roffo2025infsa,
-  title={Infinite Self-Attention},
-  author={Roffo, Giorgio},
-  year={2025}
+@article{roffo2026infsa,
+  title={Self-Attention And Beyond the Infinite: Towards Linear Transformers with Infinite Self-Attention},
+  author={Roffo, Giorgio and Palmer, Luke},
+  journal={arXiv preprint arXiv:2603.00175},
+  year={2026}
 }
 ```
 
 ---
+
+## Repository contents
+
+- PyTorch implementation of InfSA
+- PyTorch implementation of Linear-InfSA
+- Vision Transformer experiments
+- Training scripts
+- Evaluation scripts
+- Benchmarks on ImageNet / ImageNet-V2
+- Long-resolution inference experiments
+
+## Keywords
+
+- Infinite Self-Attention
+- InfSA
+- Linear-InfSA
+- linear attention
+- self-attention
+- transformer
+- vision transformer
+- efficient attention
+- long-context / high-resolution inference
+
+## Highlights
+- Spectral formulation of self-attention
+- Linear-InfSA: linear-time approximation
+- Vision Transformer integration
+- High-resolution inference support
+- Benchmarks on ImageNet / ImageNet-V2
 
 ## License
 
